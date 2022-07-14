@@ -11,5 +11,7 @@ return {
         -- refer to the configuration section below
       }
     end
-  }
+  },
+  "tpope/vim-fugitive",
+  "nathom/filetype.nvim",
 }

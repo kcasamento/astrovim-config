@@ -1,9 +1,4 @@
 return function()
-  -- Set key binding
-  local opts = { noremap = true, silent = true }
-  local map = vim.api.nvim_set_keymap
-  local set = vim.opt
-
   -- Set autocommands
   vim.api.nvim_create_augroup("packer_conf", { clear = true })
   vim.api.nvim_create_autocmd("BufWritePost", {
@@ -12,7 +7,7 @@ return function()
     pattern = "plugins.lua",
     command = "source <afile> | PackerSync",
   })
-
+  vim.g.do_filetype_lua = 1
   -- Set up custom filetypes
   -- vim.filetype.add {
   --   extension = {
