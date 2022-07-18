@@ -12,6 +12,12 @@ return {
       }
     end
   },
+  { 
+    "ray-x/lsp_signature.nvim",
+    config = function()
+      require('lsp_signature').setup(require('user.plugins.lsp_signature'))
+    end
+  },
   "tpope/vim-fugitive",
   "nathom/filetype.nvim",
 }
