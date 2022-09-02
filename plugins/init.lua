@@ -20,4 +20,9 @@ return {
   },
   "tpope/vim-fugitive",
   "nathom/filetype.nvim",
+  ["mfussenegger/nvim-dap"] = {
+    module = "dap",
+    config = require "user.plugins.nvim-dap",
+  },
+  'nvim-treesitter/nvim-treesitter-context',
 }
