@@ -1,8 +1,9 @@
 return {
   opt = {
-    relativenumber = true, -- sets vim.opt.relativenumber
+    foldenable = false,
+    foldexpr = "nvim_treesitter#foldexpr()", -- set Treesitter based folding
     foldmethod = "expr",
-    foldexpr="nvim_treesitter#foldexpr()",
+    relativenumber = true, -- sets vim.opt.relativenumber
     foldlevel=99,
   },
   g = {

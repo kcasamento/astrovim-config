@@ -10,6 +10,13 @@ local config = {
       highlights.Normal = { fg = C.fg, bg = C.bg }
       return highlights
     end,
+
+    tokyonight = function(highlights) -- or a function that returns one
+      local C = require "default_theme.colors"
+
+      highlights.Normal = { fg = C.fg, bg = C.bg }
+      return highlights
+    end,
   },
   -- CMP Source Priorities
   -- modify here the priorities of default cmp sources
